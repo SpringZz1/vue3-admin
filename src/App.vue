@@ -1,8 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
-import { AccountBookFilled } from "@vicons/antd";
-import { NIcon } from "naive-ui";
 </script>
 
 <template>
@@ -20,9 +18,9 @@ import { NIcon } from "naive-ui";
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/workbench">workbench</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
       </nav>
-      <n-icon :component="AccountBookFilled" />
     </div>
   </header>
 
