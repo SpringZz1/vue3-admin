@@ -7,6 +7,7 @@ import router from "./router";
 // import "./assets/main.css";
 // 重设样式
 import "@/styles/global.css";
+import "@/styles/reset.css";
 
 const app = createApp(App);
 
