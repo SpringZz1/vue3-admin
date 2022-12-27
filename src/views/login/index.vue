@@ -40,13 +40,14 @@
         </div>
       </div>
     </div>
+    <AppFooter></AppFooter>
   </div>
 </template>
 
 <script setup>
 import { NInput, NCheckbox, NButton } from "naive-ui";
 import { ref } from "vue";
-
+import AppFooter from "@/components/common/AppFooter.vue";
 const loginInfo = ref({
   name: "",
   password: "",
@@ -62,6 +63,7 @@ const loginInfo = ref({
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .login-container {
   display: flex;
