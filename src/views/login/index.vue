@@ -68,7 +68,7 @@ const loginInfo = ref({
 .login-container {
   display: flex;
   width: 700px;
-  height: 410px;
+  height: 425px;
   background: rgba($color: #ffffff, $alpha: 0.6);
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(50, 48, 48, 0.2);
@@ -90,12 +90,13 @@ const loginInfo = ref({
       font-size: 23px;
       color: #6a6a6a;
       font-weight: 500;
-      padding: 5px;
+      padding: 6px;
+      margin-bottom: 10px;
 
       img {
         width: 43px;
         vertical-align: middle;
-        margin-right: 20px;
+        margin-right: 17px;
       }
     }
 
