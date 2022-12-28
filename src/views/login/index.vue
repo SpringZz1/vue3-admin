@@ -34,7 +34,11 @@
           <n-checkbox label="记住我"> </n-checkbox>
         </div>
         <div>
-          <n-button type="primary" color="#316C72FF" class="button"
+          <n-button
+            type="primary"
+            color="#316C72FF"
+            class="button"
+            @click="loginHandle"
             >登录</n-button
           >
         </div>
@@ -47,11 +51,20 @@
 <script setup>
 import { NInput, NCheckbox, NButton } from "naive-ui";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 import AppFooter from "@/components/common/AppFooter.vue";
+
+const router = useRouter();
+
 const loginInfo = ref({
   name: "",
   password: "",
 });
+
+const loginHandle = () => {
+  // TODO: 这里暂时只提供跳转功能，后续添加身份验证功能
+  router.push("/workbench");
+};
 </script>
 
 <style lang="scss" scoped>
